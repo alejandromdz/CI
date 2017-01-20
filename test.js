@@ -1,11 +1,12 @@
-var Bear=require('./index.js');
+const Bear = require('./index.js');
 
-var test=require('tape');
+const assert = require('assert');
 
-test('should growl',function(assert){
-var bear=new Bear();
-var result=bear.growl();
+describe('Bear',function(){
+	var bear=new Bear();
+	var result=bear.growl();
 
-assert.equal(result,'The any bear says grr');
-assert.end();
+it('#should growl',function(){
+	assert.equal(result,'The any bear says grr');
+	});
 });

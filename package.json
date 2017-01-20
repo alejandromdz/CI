@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js && zuul --ui tape --local 8080 -- test.js",
-    "ci":"node test.js"
+    "test": "mocha test.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +17,8 @@
   },
   "homepage": "https://github.com/alejandromdz/CI#readme",
   "devDependencies": {
-    "tape": "^4.6.3",
-    "zuul": "^3.11.1"
-  }
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {}
 }
