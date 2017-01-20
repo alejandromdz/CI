@@ -1,0 +1,23 @@
+{
+  "name": "ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js && zuul --ui tape --local 8080 -- test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejandromdz/CI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alejandromdz/CI/issues"
+  },
+  "homepage": "https://github.com/alejandromdz/CI#readme",
+  "devDependencies": {
+    "tape": "^4.6.3",
+    "zuul": "^3.11.1"
+  }
+}
