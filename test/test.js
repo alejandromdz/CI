@@ -1,4 +1,4 @@
-const Bear = require('./index.js');
+const Bear = require('../index.js');
 
 const assert = require('assert');
 
