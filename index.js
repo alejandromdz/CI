@@ -7,3 +7,7 @@ this.type=type||'any';
 Bear.prototype.growl=function(says){
 return 'The '+this.type+' bear says '+(says||'grr'); 
 }
+
+Bar.prototype.walk=function(){
+return 'THe bear walks';
+}
