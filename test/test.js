@@ -1,12 +1,9 @@
-const Bear = require('../index.js');
+var math = require('../index.js');
+var assert = require('assert');
 
-const assert = require('assert');
-
-describe('Bear',function(){
-	var bear=new Bear();
-	var result=bear.growl();
-
-it('#should growl',function(){
-	assert.equal(result,'The any bear says grr');
+describe('Math test',function(){
+	
+	it('#should add two numbers',function(){
+		assert.equal(math.add(2,2),4);
 	});
 });

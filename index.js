@@ -1,13 +1,11 @@
-module.exports=Bear;
+MathFunctions={}
 
-function Bear(type){
-this.type=type||'any';
+MathFunctions.add=function(a,b){
+return a+b;
 }
 
-Bear.prototype.growl=function(says){
-return 'The '+this.type+' bear says '+(says||'grr'); 
+MathFunctions.sub=function(a,b){
+return a-b;
 }
 
-Bear.prototype.walk=function(){
-return 'THe bear walks';
-}
+module.exports=MathFunctions;
