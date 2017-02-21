@@ -1,5 +1,5 @@
 install:
   - npm install -g codecov
 script:
-  - istanbul cover ./node_modules/mocha/bin/_mocha test.js
+  - nyc mocha --timeout 1000
   - codecov
