@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/nyc/bin/nyc.js mocha && codecov"
+    "test": "node_modules/nyc/bin/nyc.js report --reporter=lcov && codecov"
   },
   "repository": {
     "type": "git",
